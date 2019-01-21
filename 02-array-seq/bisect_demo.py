@@ -16,7 +16,7 @@ def demo(bisect_fn):
 if __name__ == '__main__':
 
     if sys.argv[-1] == 'left':    # <4>
-        bisect_fn = bisect.bisect_left
+        bisect_fn = bisect.bisect_left  # inserts items that compare equal before the item in the ist
     else:
         bisect_fn = bisect.bisect
 

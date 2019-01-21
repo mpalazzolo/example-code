@@ -16,3 +16,5 @@ clock('listcomp        :', '[ord(s) for s in symbols if ord(s) > 127]')
 clock('listcomp + func :', '[ord(s) for s in symbols if non_ascii(ord(s))]')
 clock('filter + lambda :', 'list(filter(lambda c: c > 127, map(ord, symbols)))')
 clock('filter + func   :', 'list(filter(non_ascii, map(ord, symbols)))')
+
+# List comprehensions faster than filter + lambda in this example, also more readable
